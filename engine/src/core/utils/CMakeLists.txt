@@ -4,6 +4,7 @@ set(utilSources
     ${utilsSourceDir}/IO.cpp
     ${utilsSourceDir}/Logging.cpp
     ${utilsSourceDir}/Config.cpp
+    ${utilsSourceDir}/file.cpp
 )
 
 source_group("Source Files\\Core\\Utils" FILES ${utilSources})
