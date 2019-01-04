@@ -1,5 +1,8 @@
 #include <experimental/filesystem>
 #include <engine/core/Core.hpp>
+#include <experimental/filesystem>
+
+namespace fs = std::experimental::filesystem;
 
 namespace phx{
     class Content{

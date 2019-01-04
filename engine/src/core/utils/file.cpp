@@ -8,7 +8,7 @@ void load(){
     if(! fs::exists("mods")) fs::create_directory("mods");
     if(! fs::exists("texturepacks")) fs::create_directory("texturepacks");
 
-    for (const auto & entry : fs::directory_iterator(path))
+    for (const auto & entry : fs::directory_iterator("games/"))
         if(fs::exists(entry.path().string() + "/info.txt" ))
             m_games.push_back("games/"+entry.path());
 };
