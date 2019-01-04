@@ -4,6 +4,7 @@ project(Phoenix_Engine)
 
 set(source_dir ${PROJECT_SOURCE_DIR}/src)
 set(header_dir ${PROJECT_SOURCE_DIR}/include)
+set(CMAKE_CXX_STANDARD 17)
 
 unset(engineSources CACHE)
 unset(engineHeaders CACHE)
