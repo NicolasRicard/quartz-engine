@@ -10,7 +10,7 @@ void load(){
 
     for (const auto & entry : fs::directory_iterator("games/"))
         if(fs::exists(entry.path().string() + "/info.txt" ))
-            m_games.push_back("games/"+entry.path());
+            m_games.push_back("games/" + entry.path());
 };
 
 //Getters and setters
