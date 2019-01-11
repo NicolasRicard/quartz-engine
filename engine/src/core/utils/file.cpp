@@ -2,7 +2,7 @@
 
 using namespace phx;
 
-void load(){
+void Content::load(){
     //Create content directories if they don't exist
     if(! fs::exists("games")) fs::create_directory("games");
     if(! fs::exists("mods")) fs::create_directory("mods");
@@ -14,10 +14,21 @@ void load(){
 };
 
 //Getters and setters
-
-std::string getGame(std::string gamename){
+std::string Content::getGame(std::string gamename){
+    
+};
+std::string Content::getMod(std::string modname){
 
 };
-std::string getMod(std::string modname){
+std::string Content::getTexturePack(std::string texturepackname){
 
+};
+std::vector <std::string>Content::getGames(){
+    return m_games;
+};
+std::vector <std::string>Content::getMods(){
+    return m_mods;
+};
+std::vector <std::string>Content::getTexturePacks(){
+    return m_texturePacks;
 };

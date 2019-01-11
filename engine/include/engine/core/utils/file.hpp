@@ -11,10 +11,14 @@ namespace phx{
 
         void load(); //Scan through content folders for any content
 
-        //Getters and setters
+        //Getters
 
         std::string getGame(std::string gamename);
         std::string getMod(std::string modname);
+        std::string getTexturePack(std::string texturepackname);
+        std::vector <std::string>getGames();
+        std::vector <std::string>getMods();
+        std::vector <std::string>getTexturePacks();
 
         private:
             //Vectors to hold loaded content packs
